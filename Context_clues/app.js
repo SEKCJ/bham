@@ -10,15 +10,15 @@ $(document).ready(function () {
     }
 
     function accusation(i) {
-        var friend = friends[(i - 1) % 5]
-        var location = locations[(i - 1) % 10]
+        var friend = friends[(i-1) % 5]
+        var location = locations[((i - 1)%10)]
         var weapon = weapons[(i - 1) % 20]
 
-        function alert() {
-            console.log(`Accusation ${i}: I Accuse ${friend}, with the ${weapon} in the ${location}!`);
+        function Alert() {
+            alert(`Accusation ${i}: I Accuse ${friend}, with the ${weapon} in the ${location}!`)
         }
 
-        return alert;
+        return Alert;
     }
 
 })
